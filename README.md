@@ -34,9 +34,15 @@
 
 8. Work with the python file to create the API.
     - Before running the code, modify the database table to assign primary key to the id for each row of earthquake.
-        a. By using SQLite Studio 
+        - By using SQLite Studio,  primary key was assigned:
+        <img width="418" alt="Screen Shot 2022-01-25 at 6 05 24 PM" src="https://user-images.githubusercontent.com/80008461/151086346-a270b69c-6d29-42d5-8101-f3f5c7afa774.png">
+        
+        - The resulting query was generated and applied:
+        ![Screen Shot 2022-01-25 at 6 19 53 PM](https://user-images.githubusercontent.com/80008461/151087101-c09e8edf-e44c-417c-9668-ffb7d800d05f.png)
+        ![Screen Shot 2022-01-25 at 6 21 01 PM](https://user-images.githubusercontent.com/80008461/151087134-6e1605a6-8188-4835-b6c7-86635e93545a.png)
+        ![Screen Shot 2022-01-25 at 6 21 18 PM](https://user-images.githubusercontent.com/80008461/151087156-8cd82010-8388-4399-accc-1d2e9df70216.png)
 
-    -a
-
+        - Run python code to test the API app is working in a development server:
+        <img width="505" alt="Screen Shot 2022-01-25 at 6 23 25 PM" src="https://user-images.githubusercontent.com/80008461/151087331-553af950-899c-404a-b80c-9b79f8f0fee7.png">
 
 
