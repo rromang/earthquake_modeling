@@ -1,0 +1,86 @@
+PRAGMA foreign_keys = 0;
+
+CREATE TABLE sqlitestudio_temp_table AS SELECT * FROM earthquake_raw;
+
+DROP TABLE earthquake_raw;
+
+CREATE TABLE earthquake_raw (
+    time            TEXT,
+    latitude        REAL,
+    longitude       REAL,
+    depth           REAL,
+    mag             REAL,
+    magType         TEXT,
+    nst             REAL,
+    gap             REAL,
+    dmin            REAL,
+    rms             REAL,
+    net             TEXT,
+    id              TEXT,
+    updated         TEXT,
+    place           TEXT,
+    type            TEXT,
+    horizontalError REAL,
+    depthError      REAL,
+    magError        REAL,
+    magNst          REAL,
+    status          TEXT,
+    locationSource  TEXT,
+    magSource       TEXT,
+    PRIMARY KEY (
+        id
+    )
+    ON CONFLICT REPLACE
+);
+
+INSERT INTO earthquake_raw (
+                               time,
+                               latitude,
+                               longitude,
+                               depth,
+                               mag,
+                               magType,
+                               nst,
+                               gap,
+                               dmin,
+                               rms,
+                               net,
+                               id,
+                               updated,
+                               place,
+                               type,
+                               horizontalError,
+                               depthError,
+                               magError,
+                               magNst,
+                               status,
+                               locationSource,
+                               magSource
+                           )
+                           SELECT time,
+                                  latitude,
+                                  longitude,
+                                  depth,
+                                  mag,
+                                  magType,
+                                  nst,
+                                  gap,
+                                  dmin,
+                                  rms,
+                                  net,
+                                  id,
+                                  updated,
+                                  place,
+                                  type,
+                                  horizontalError,
+                                  depthError,
+                                  magError,
+                                  magNst,
+                                  status,
+                                  locationSource,
+                                  magSource
+                             FROM sqlitestudio_temp_table;
+
+DROP TABLE sqlitestudio_temp_table;
+
+PRAGMA foreign_keys = 1;
