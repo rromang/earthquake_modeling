@@ -32,5 +32,11 @@
 7. Replace the tables with the new tables without duplicates and save a csv copy of the table.
 <img width="827" alt="Screen Shot 2022-01-24 at 10 21 58 PM" src="https://user-images.githubusercontent.com/80008461/150916064-66127375-c14b-4253-9a9f-3e3b4dab2b08.png">
 
+8. Work with the python file to create the API.
+    - Before running the code, modify the database table to assign primary key to the id for each row of earthquake.
+        a. By using SQLite Studio 
+
+    -a
+
 
 
