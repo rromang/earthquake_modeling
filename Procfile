@@ -1,1 +1,1 @@
-web: gunicorn earthquake_modeling.wsgi
+web: gunicorn app:main
