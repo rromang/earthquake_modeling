@@ -50,7 +50,7 @@
 ## Part Two: Creating the code for machine learning with data extracted from USGS and loaded to database.
 ### Objectives:
 - Practice the best machine learning models that will work with the data use.
-    - understand how things like NaN or the data type could determine a modeling approach.
+    - understand how things like NaN or the data type could affect a modeling approach.
 - Load data from the created database and run models with it to practice connecting directly to a SQL database.
 
 
