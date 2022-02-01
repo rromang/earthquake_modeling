@@ -34,7 +34,7 @@
 
 8. Work with the python file to create the API.
     - Before running the code, modify the database table to assign primary key to the id for each row of earthquake.
-        - By using SQLite Studio,  primary key was assigned:
+        - Using SQLite Studio, primary key was assigned:
         <img width="418" alt="Screen Shot 2022-01-25 at 6 05 24 PM" src="https://user-images.githubusercontent.com/80008461/151086346-a270b69c-6d29-42d5-8101-f3f5c7afa774.png">
         
         - The resulting query was generated and applied:
@@ -44,5 +44,13 @@
 
         - Run python code to test the API app is working in a development server:
         <img width="505" alt="Screen Shot 2022-01-25 at 6 23 25 PM" src="https://user-images.githubusercontent.com/80008461/151087331-553af950-899c-404a-b80c-9b79f8f0fee7.png">
+        
+        - Deployment attempted with github pages. Will attempt API deployment with Heroku.
+
+## Part Two: Creating the code for machine learning with data extracted from USGS and loaded to database.
+### Objectives:
+- Practice the best machine learning models that will work with the data use.
+    - understand how things like NaN or the data type could determine a modeling approach.
+- Load data from the created database and run models with it to practice connecting directly to a SQL database.
 
 
