@@ -1,3 +1,1 @@
-web: python main.py
-
-worker: main.py
+web: gunicorn --bind 0.0.0.0:$PORT app:main.py
