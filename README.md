@@ -1,7 +1,9 @@
 # Machine Learning Regressions for the Prediction of Earthquake Characteristics/Features
-
+----------------------------
 ## WORK IN PROGRESS!!
-
+----------------------------
+API can be found: https://earthquake-ml-app.herokuapp.com
+----------------------------
 ### Note: Part of the inspiration/ideas for some of the modeling machine learning code came from: https://www.kaggle.com/chenzecharya/earthquake-random-forest.
 
 ## Part One: Creation of Databases and Deployment of Earthquake API
@@ -45,7 +47,7 @@
         - Run python code to test the API app is working in a development server:
         <img width="505" alt="Screen Shot 2022-01-25 at 6 23 25 PM" src="https://user-images.githubusercontent.com/80008461/151087331-553af950-899c-404a-b80c-9b79f8f0fee7.png">
         
-        - Deployment attempted with github pages. Will attempt API deployment with Heroku.
+        - Deployment with Heroku: https://earthquake-ml-app.herokuapp.com.
 
 ## Part Two: Creating the code for machine learning with data extracted from USGS and loaded to database.
 ### Objectives:
