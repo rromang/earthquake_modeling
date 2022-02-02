@@ -1,1 +1,3 @@
-web: app:main
+web: python main.py
+
+worker: main.py
