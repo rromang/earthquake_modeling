@@ -49,6 +49,7 @@ API can be found: https://earthquake-ml-app.herokuapp.com
         
         - Deployment with Heroku: https://earthquake-ml-app.herokuapp.com.
 
+
 ## Part Two: Creating the code for machine learning with data extracted from USGS and loaded to database.
 ### Objectives:
 - Practice the best machine learning models that will work with the data use.
