@@ -57,9 +57,9 @@ API can be found: https://earthquake-ml-app.herokuapp.com
 
 ### Initial work/background:
 - Choosing a ML algorithm for Earthquake Modeling:
-    - Problem: Use obtained metrics from earthquake monitoring/measurement data from USGS to determine which of the metrics have better predictive capabilities.
-    - Goal: Predictive. Models to be used should be supervised learning or semi-supervised.
-    - Data (variables of interest) is numeric: Regression type of models are required for supervised learning models.
+    - **Problem**: Use obtained metrics from earthquake monitoring/measurement data from USGS to determine which of the metrics have better predictive capabilities.
+    - **Goal**: Predictive. Models to be used should be supervised learning or semi-supervised.
+    - **Data** (variables of interest) is numeric: Regression type of models are required for supervised learning models.
         - Data obtained from USGS can be used for training model and predict outcomes.
 
 
