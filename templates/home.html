@@ -54,76 +54,36 @@
                 </div>
               </nav>
 
-<div class="'container">
-        <h1><strong>Earthquakes Data Collection and Analysis</strong></h1>
-<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-        Earthquake API
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
-      <div class="accordion-body">
-        <strong>Data collection for earthquakes from around the world.</strong> Data collection started at the end of 2021 and will continue for several months. The idea is to have a dataset with sufficient entries to be used for things like machine learning.
-        <h4>Information collected from USGS Eathquake Hazards Programs</h4>
-        <p><a href="https://www.usgs.gov/programs/earthquake-hazards/earthquakes">Earthquakes</a></p>
-        </br>
-        <p>The information can be accessed <a href="{{ url_for('earthquakes') }}">here</a>.</p>
-        <br>
-        <p>Last updated: 2022-02-06</p>
-        <br>
-        <br>
-<p>Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
-        document.getElementById("datetime").innerHTML=dt.toLocaleString();</script> 
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Accordion Item #2
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-  <!-- <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Accordion Item #3
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div> -->
-  </div>
-</div>
-
-
-
-
-</div>
-
 
 <div class="container">
 <h1>Earthquakes Data Collection and Analysis</h1>
 </br>
 </div>
 <div class="container">
-<h2>Earthquakes API</h2>
+        <div class="card mb-3">
+                <h3 class="card-header">Earthquakes Data Collection and Analysis</h3>
+                <div class="card-body">
+                        <h4 class="card-title">Earthquakes API</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Collection of Earthquake Information</h6>
+                        <p class="card-text">Data extracted/collected from USGS Earthquake Hazards Programs.</p>
+                        <p class="card-text"><strong>Main idea is to create a data set with sufficient entried that could be used for data analysis and other manipulations. </strong>.</p>
+                        <p class="card-text">Data will be updated monthly for several months. Data collection started at the end of 2021.</p>
+                        <a href="{{ url_for('earthquakes') }}" class="card-link">Earthquakes API</a>
+                        <a href="https://www.usgs.gov/programs/earthquake-hazards/earthquakes" class="card-link">USGS Earthquakes</a>
+                      </div>
+
+
+
+
+
+<!-- <h2>Earthquakes API</h2>
 </br>
 <h3>Information collected from USGS Eathquake Hazards Programs</h3>
 </br>
 <p>The information can be accessed <a href="{{ url_for('earthquakes') }}">here</a>.</p>
 <br>
 <p>Last updated: 2022-02-06</p>
-<br>
+<br> -->
 <br>
 <p>Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
         document.getElementById("datetime").innerHTML=dt.toLocaleString();</script> 
