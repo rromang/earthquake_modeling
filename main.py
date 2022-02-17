@@ -1,4 +1,4 @@
-# import numpy as np
+# python version 3.8.12
 import pandas as pd
 import datetime as dt
 
