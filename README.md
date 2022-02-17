@@ -38,6 +38,7 @@ API can be found: https://earthquake-ml-app.herokuapp.com
     - Before running the code, modify the database table to assign primary key to the id for each row of earthquake.
         - Using SQLite Studio, primary key was assigned:
         <img width="418" alt="Screen Shot 2022-01-25 at 6 05 24 PM" src="https://user-images.githubusercontent.com/80008461/151086346-a270b69c-6d29-42d5-8101-f3f5c7afa774.png">
+        
             - Note: Everytime the database is updated in jupyter, it seems the primary key needs to be recreated in SQLite Studio.
         
         - The resulting query was generated and applied:
