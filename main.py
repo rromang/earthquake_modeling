@@ -45,6 +45,11 @@ with open('Database/json/earthquake.json', 'r') as myfile:
 def welcome():
     # """List all available api routes."""
     return render_template('home.html')
+
+@app.route("/sweetviz")
+def viz1():
+    # """List all available api routes."""
+    return render_template('SWEETVIZ_REPORT.html')
         
 @app.route("/earthquakes")
 def earthquakes():

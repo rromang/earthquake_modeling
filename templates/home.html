@@ -53,11 +53,6 @@
                   </div>
                 </div>
               </nav>
-
-
-<div class="container">
-<h1>Earthquakes Data Collection and Analysis</h1>
-</br>
 </div>
 <div class="container">
         <div class="card mb-3">
@@ -68,10 +63,21 @@
                         <p class="card-text">Data extracted/collected from USGS Earthquake Hazards Programs.</p>
                         <p class="card-text"><strong>Main idea is to create a data set with sufficient entried that could be used for data analysis and other manipulations. </strong>.</p>
                         <p class="card-text">Data will be updated monthly for several months. Data collection started at the end of 2021.</p>
+                        <p class="card-text">Last updated: 2022-02-06</p>
                         <a href="{{ url_for('earthquakes') }}" class="card-link">Earthquakes API</a>
                         <a href="https://www.usgs.gov/programs/earthquake-hazards/earthquakes" class="card-link">USGS Earthquakes</a>
+                </div>
+                <div class="container">
+                      <div class="card-body">
+                        <h4 class="card-title">Initial Data Exploration</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">A look at the data to see some initial insights. </h6>
+                        <p class="card-text">Data extracted/collected from USGS Earthquake Hazards Programs.</p>
+                        <p class="card-text">Data was pass through Python module <a class="nav-link" href="https://github.com/fbdesignpro/sweetviz">SweetViz</a> for a quick initial visualization.</p>
+                        <p class="card-text">Last updated: 2022-02-06</p>
+                        <a href="{{ url_for('sweetviz') }}" class="card-link">Earthquakes API</a>
+                        <!-- <a href="https://www.usgs.gov/programs/earthquake-hazards/earthquakes" class="card-link">USGS Earthquakes</a> -->
                       </div>
-
+                </div>
 
 
 
