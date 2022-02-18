@@ -3,7 +3,7 @@
 <head>
 </br>
 </br>
-<title>Earthquake Information API</title>
+<title>Earthquakes Information and Data Analysis</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="static/bootstrap.min.css">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -14,7 +14,7 @@
 <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Navbar</a>
+                  <a class="navbar-brand" href="#">Links</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -29,27 +29,10 @@
                       <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('earthquakes') }}">Earthquakes API</a>
                       </li>
-                      <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                      </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="{{ url_for('viz1') }}">Initial Data Exploration: SweetViz</a>
                       </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Separated link</a>
-                        </div>
-                      </li>
-                    </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-sm-2" type="text" placeholder="Search">
-                      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                    </form> -->
+   
                   </div>
                 </div>
               </nav>
@@ -61,7 +44,7 @@
                         <h4 class="card-title">Earthquakes API</h4>
                         <h6 class="card-subtitle mb-2 text-muted">Collection of Earthquake Information</h6>
                         <p class="card-text">Data extracted/collected from USGS Earthquake Hazards Programs.</p>
-                        <p class="card-text"><strong>Main idea is to create a data set with sufficient entried that could be used for data analysis and other manipulations. </strong>.</p>
+                        <p class="card-text"><strong>Main idea is to create a data set with sufficient entries to be used for data analysis and other manipulations. </strong></p>
                         <p class="card-text">Data will be updated monthly for several months. Data collection started at the end of 2021.</p>
                         <p class="card-text">Last updated: 2022-02-06</p>
                         <a href="{{ url_for('earthquakes') }}" class="card-link">Earthquakes API</a>
@@ -74,25 +57,15 @@
                         <p class="card-text">Data extracted/collected from USGS Earthquake Hazards Programs.</p>
                         <p class="card-text">Data was passed through Python module <a href="https://github.com/fbdesignpro/sweetviz">SweetViz</a> for a quick initial visualization.</p>
                         <!-- <p class="card-text">Last updated: 2022-02-06</p> -->
-                        <a href="{{ url_for('viz1') }}" class="card-link">SweetViz Initial Data Exploration</a>
+                        <a href="{{ url_for('viz2') }}" class="card-link">Initial Data Exploration</a>
+                        <a href="{{ url_for('viz1') }}" class="card-link">SweetViz: Initial EDA</a>
                         <!-- <a href="https://www.usgs.gov/programs/earthquake-hazards/earthquakes" class="card-link">USGS Earthquakes</a> -->
                       </div>
                 </div>
 
-
-
-
-<!-- <h2>Earthquakes API</h2>
-</br>
-<h3>Information collected from USGS Eathquake Hazards Programs</h3>
-</br>
-<p>The information can be accessed <a href="{{ url_for('earthquakes') }}">here</a>.</p>
 <br>
-<p>Last updated: 2022-02-06</p>
-<br> -->
-<br>
-<p>Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
-        document.getElementById("datetime").innerHTML=dt.toLocaleString();</script> 
 </div>
+<p>Updated Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
+        document.getElementById("datetime").innerHTML=dt.toLocaleString();</script> 
 </body>
 </html>

@@ -1,4 +1,4 @@
-# import numpy as np
+# python version 3.8.12
 import pandas as pd
 import datetime as dt
 
@@ -50,6 +50,11 @@ def welcome():
 def viz1():
     # """List all available api routes."""
     return render_template('SWEETVIZ_REPORT.html')
+
+@app.route("/initial_EDA")
+def viz2():
+    # """List all available api routes."""
+    return render_template('initial_data.html')
         
 @app.route("/earthquakes")
 def earthquakes():
