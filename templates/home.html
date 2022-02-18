@@ -57,14 +57,15 @@
                         <p class="card-text">Data extracted/collected from USGS Earthquake Hazards Programs.</p>
                         <p class="card-text">Data was passed through Python module <a href="https://github.com/fbdesignpro/sweetviz">SweetViz</a> for a quick initial visualization.</p>
                         <!-- <p class="card-text">Last updated: 2022-02-06</p> -->
-                        <a href="{{ url_for('viz1') }}" class="card-link">SweetViz Initial Data Exploration</a>
+                        <a href="{{ url_for('viz2') }}" class="card-link">Initial Data Exploration</a>
+                        <a href="{{ url_for('viz1') }}" class="card-link">SweetViz: Initial EDA</a>
                         <!-- <a href="https://www.usgs.gov/programs/earthquake-hazards/earthquakes" class="card-link">USGS Earthquakes</a> -->
                       </div>
                 </div>
 
 <br>
 </div>
-<p>Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
+<p>Updated Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
         document.getElementById("datetime").innerHTML=dt.toLocaleString();</script> 
 </body>
 </html>

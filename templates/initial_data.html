@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
 </br>
 </br>
 <title>Earthquakes Data: Initial Data Exploration</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="static/bootstrap.min.css">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</head>
+
+
+      </head>
 
 <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -38,11 +42,22 @@
 </div>
 <br>
 <br>
-<div class="container">
-  <h3><strong>Descriptive Statistics</strong></h3>
-    <table class="table table-hover">
+  <div class="container">
+  <h3><strong>Descriptive Statistics for Numerical Data</strong></h3>
+  <div class="card-body">
+    <table class="table table-hover" style="width:75%">
+      <style>
+        table, td, th {
+          border: 1px solid black;
+        }
+        
+        table {
+          border-collapse: collapse;
+          width: 50%;
+        }
+        </style>
       <thead>
-      <tr style="text-align: right;">
+      <tr style="text-align: left;">
         <th scope="col"></th>
         <th scope="col">latitude</th>
         <th scope="col">longitude</th>
@@ -61,129 +76,434 @@
     <tbody>
       <tr class="table-info">
         <th>Count</th>
-        <td>20185.000000</td>
-        <td>20185.000000</td>
-        <td>20185.000000</td>
-        <td>20180.000000</td>
-        <td>14149.000000</td>
-        <td>16840.000000</td>
-        <td>13971.000000</td>
-        <td>20184.000000</td>
-        <td>14895.000000</td>
-        <td>20185.000000</td>
-        <td>15847.000000</td>
-        <td>16821.000000</td>
+        <td>20,185.000</td>
+        <td>20,185.000</td>
+        <td>20,185.000</td>
+        <td>20,180.000</td>
+        <td>14,149.000</td>
+        <td>16,840.000</td>
+        <td>13,971.000</td>
+        <td>20,184.000</td>
+        <td>14,895.000</td>
+        <td>20,185.000</td>
+        <td>15,847.000</td>
+        <td>16,821.000</td>
       </tr>
       <tr class="table-info">
         <th>Mean</th>
-        <td>36.404868</td>
-        <td>-108.781447</td>
-        <td>22.853407</td>
-        <td>1.726416</td>
-        <td>20.488444</td>
-        <td>121.256412</td>
-        <td>0.714681</td>
-        <td>0.282825</td>
-        <td>1.898991</td>
-        <td>3.614683</td>
-        <td>0.288254</td>
-        <td>14.770109</td>
+        <td>36.405</td>
+        <td>-108.781</td>
+        <td>22.853</td>
+        <td>1.726</td>
+        <td>20.488</td>
+        <td>121.256</td>
+        <td>0.715</td>
+        <td>0.283</td>
+        <td>1.899</td>
+        <td>3.615</td>
+        <td>0.288</td>
+        <td>14.770</td>
       </tr>
       <tr class="table-info">
         <th>Std Dev</th>
-        <td>19.838951</td>
-        <td>71.387189</td>
-        <td>52.951188</td>
-        <td>1.282050</td>
-        <td>15.480622</td>
-        <td>65.737282</td>
-        <td>2.251015</td>
-        <td>0.298190</td>
-        <td>3.259437</td>
-        <td>105.369952</td>
-        <td>0.552207</td>
-        <td>27.498336</td>
+        <td>19.839</td>
+        <td>71.387</td>
+        <td>52.951</td>
+        <td>1.282</td>
+        <td>15.481</td>
+        <td>65.737</td>
+        <td>2.251</td>
+        <td>0.298</td>
+        <td>3.259</td>
+        <td>105.370</td>
+        <td>0.552</td>
+        <td>27.498</td>
       </tr>
       <tr class="table-info">
         <th>min</th>
-        <td>-65.361900</td>
-        <td>-179.998500</td>
-        <td>-10.000000</td>
-        <td>-1.310000</td>
-        <td>2.000000</td>
-        <td>10.000000</td>
-        <td>0.000000</td>
-        <td>0.000000</td>
-        <td>0.090000</td>
-        <td>0.000000</td>
-        <td>0.000000</td>
-        <td>0.000000</td>
+        <td>-65.362</td>
+        <td>-179.999</td>
+        <td>-10.000</td>
+        <td>-1.310</td>
+        <td>2.000</td>
+        <td>10.000</td>
+        <td>0.000</td>
+        <td>0.000</td>
+        <td>0.090</td>
+        <td>0.000</td>
+        <td>0.000</td>
+        <td>0.000</td>
       </tr>
       <tr class="table-info">
         <th>25%</th>
-        <td>33.376667</td>
-        <td>-150.031100</td>
-        <td>3.420000</td>
-        <td>0.860000</td>
-        <td>9.000000</td>
-        <td>72.000000</td>
-        <td>0.021765</td>
-        <td>0.090000</td>
-        <td>0.290000</td>
-        <td>0.490000</td>
-        <td>0.104000</td>
-        <td>4.000000</td>
+        <td>33.377</td>
+        <td>-150.031</td>
+        <td>3.420</td>
+        <td>0.860</td>
+        <td>9.000</td>
+        <td>72.000</td>
+        <td>0.022</td>
+        <td>0.090</td>
+        <td>0.290</td>
+        <td>0.490</td>
+        <td>0.104</td>
+        <td>4.000</td>
       </tr>
       <tr class="table-info">
         <th>50%</th>
-        <td>38.174100</td>
-        <td>-121.252667</td>
-        <td>8.820000</td>
-        <td>1.490000</td>
-        <td>16.000000</td>
-        <td>107.000000</td>
-        <td>0.066900</td>
-        <td>0.150000</td>
-        <td>0.490000</td>
-        <td>0.800000</td>
-        <td>0.160000</td>
-        <td>8.000000</td>
+        <td>38.174</td>
+        <td>-121.253</td>
+        <td>8.820</td>
+        <td>1.490</td>
+        <td>16.000</td>
+        <td>107.000</td>
+        <td>0.067</td>
+        <td>0.150</td>
+        <td>0.490</td>
+        <td>0.800</td>
+        <td>0.160</td>
+        <td>8.000</td>
       </tr>
       <tr class="table-info">
         <th>75%</th>
-        <td>45.729500</td>
-        <td>-116.243700</td>
-        <td>18.600000</td>
-        <td>2.170000</td>
-        <td>27.000000</td>
-        <td>155.000000</td>
-        <td>0.204700</td>
-        <td>0.420000</td>
-        <td>1.150000</td>
-        <td>1.800000</td>
-        <td>0.242000</td>
-        <td>16.000000</td>
+        <td>45.730</td>
+        <td>-116.244</td>
+        <td>18.600</td>
+        <td>2.170</td>
+        <td>27.000</td>
+        <td>155.000</td>
+        <td>0.205</td>
+        <td>0.420</td>
+        <td>1.150</td>
+        <td>1.800</td>
+        <td>0.242</td>
+        <td>16.000</td>
       </tr>
       <tr class="table-info">
         <th>Max</th>
-        <td>85.309300</td>
-        <td>179.990100</td>
-        <td>653.870000</td>
-        <td>7.300000</td>
-        <td>189.000000</td>
-        <td>359.000000</td>
-        <td>39.750000</td>
-        <td>7.060000</td>
-        <td>54.500000</td>
-        <td>11327.700000</td>
-        <td>5.500000</td>
-        <td>619.000000</td>
+        <td>85.309</td>
+        <td>179.990</td>
+        <td>653.870</td>
+        <td>7.300</td>
+        <td>189.000</td>
+        <td>359.000</td>
+        <td>39.750</td>
+        <td>7.060</td>
+        <td>54.500</td>
+        <td>11,327.700</td>
+        <td>5.500</td>
+        <td>619.000</td>
       </tr>
     </tbody>
   </table>
-  </table>
+  <br>
+  <br>
+
+</div>
+
+  <div class="container" id="categorical">
+    <h3><strong>Information for Categorical Data</strong></h3>
+    <br>
+      <table class="table table-hover" id="table-categorical1">
+        <style>
+        table, td, th {
+          border: 1px solid black;
+        }
+        
+        table {
+          border-collapse: collapse;
+          width: 50%;
+        }
+        </style>
+        <h4>USGS Information on Types of Earthquakes Detected</h4>
+        <thead>
+          <tr style="text-align: left;">
+            <th scope="col">Earthquake Type</th>
+            <th scope="col">Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-info">
+            <td>earthquake</td>
+            <td>19849</td>
+          </tr>
+          <tr class="table-info">
+            <td>quarry blast</td>
+            <td>211</td>
+          </tr>
+          <tr class="table-info">
+            <td>explosion</td>
+            <td>85</td>
+          </tr>
+          <tr class="table-info">
+            <td>ice quake</td>
+            <td>27</td>
+          </tr>
+          <tr class="table-info">
+            <td>other event</td>
+            <td>11</td>
+          </tr>
+          <tr class="table-info">
+            <td>sonic boom</td>
+            <td>1</td>
+          </tr>
+          <tr class="table-info">
+            <td>volcanic eruption</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+        <br>
+      <table class="table table-hover" id="table-categorical2">
+        <h4>USGS Information on Top 50 Places Where Earthquakes Have Been Detected</h4>
+        <thead>
+          <tr style="text-align: left;">
+            <th scope="col">Places</th>
+            <th scope="col">Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-info">
+            <td>Rat Islands, Aleutian Islands, Alaska</td>
+            <td>247</td>
+          </tr>
+          <tr class="table-info">
+            <td>8km NW of The Geysers, CA</td>
+            <td>236</td>
+          </tr>
+          <tr class="table-info">
+            <td>7km NW of The Geysers, CA</td>
+            <td>169</td>
+          </tr>
+          <tr class="table-info">
+            <td>off the coast of Oregon</td>
+            <td>158</td>
+          </tr>
+          <tr class="table-info">
+            <td>6km NW of The Geysers, CA</td>
+            <td>143</td>
+          </tr>
+          <tr class="table-info">
+            <td>8km WNW of Cobb, CA</td>
+            <td>141</td>
+          </tr>
+          <tr class="table-info">
+            <td>5 km SW of Volcano, Hawaii</td>
+            <td>118</td>
+          </tr>
+          <tr class="table-info">
+            <td>9km WNW of Cobb, CA</td>
+            <td>117</td>
+          </tr>
+          <tr class="table-info">
+            <td>3km NNW of Palomar Observatory, CA</td>
+            <td>110</td>
+          </tr>
+          <tr class="table-info">
+            <td>South Sandwich Islands region</td>
+            <td>105</td>
+          </tr>
+          <tr class="table-info">
+            <td>16 km SSE of Sunnyside, Utah</td>
+            <td>99</td>
+          </tr>
+          <tr class="table-info">
+            <td>15 km SSE of Sunnyside, Utah</td>
+            <td>92</td>
+          </tr>
+          <tr class="table-info">
+  
+            <td>23km SSW of La Quinta, CA</td>
+            <td>90</td>
+          </tr>
+          <tr class="table-info">
+
+            <td>4km W of Cobb, CA</td>
+            <td>84</td>
+          </tr>
+          <tr class="table-info">
+   
+            <td>35 km SE of Mina, Nevada</td>
+            <td>83</td>
+          </tr>
+          <tr class="table-info">
+   
+            <td>34 km SE of Mina, Nevada</td>
+            <td>83</td>
+          </tr>
+          <tr class="table-info">
+
+            <td>10km NW of The Geysers, CA</td>
+            <td>80</td>
+          </tr>
+          <tr class="table-info">
+
+            <td>8km W of Cobb, CA</td>
+            <td>79</td>
+          </tr>
+          <tr class="table-info">
+
+            <td>10km WNW of The Geysers, CA</td>
+            <td>76</td>
+          </tr>
+          <tr class="table-info">
+
+            <td>26 km SW of Mina, Nevada</td>
+            <td>70</td>
+          </tr>
+          <tr class="table-info">
+
+            <td>7km W of Cobb, CA</td>
+            <td>68</td>
+          </tr>
+          <tr class="table-info">
+
+            <td>2km NNW of The Geysers, CA</td>
+            <td>68</td>
+          </tr>
+          <tr class="table-info">
+
+            <td>11km NE of Coso Junction, CA</td>
+            <td>65</td>
+          </tr>
+          <tr class="table-info">
+    
+            <td>13km WNW of Anza, CA</td>
+            <td>65</td>
+          </tr>
+          <tr class="table-info">
+
+            <td>Izu Islands, Japan region</td>
+            <td>63</td>
+          </tr>
+          <tr class="table-info">
+
+            <td>7km WNW of Cobb, CA</td>
+            <td>61</td>
+          </tr>
+          <tr class="table-info">
+
+            <td>2km NW of The Geysers, CA</td>
+            <td>61</td>
+          </tr>
+          <tr class="table-info">
+   
+            <td>16 km WSW of Dutch Harbor, Alaska</td>
+            <td>60</td>
+          </tr>
+          <tr class="table-info">
+   
+            <td>Island of Hawaii, Hawaii</td>
+            <td>59</td>
+          </tr>
+          <tr class="table-info">
+       
+            <td>5km NW of The Geysers, CA</td>
+            <td>58</td>
+          </tr>
+          <tr class="table-info">
+            <td>Kermadec Islands region</td>
+            <td>58</td>
+          </tr>
+          <tr class="table-info">
+     
+            <td>6km W of Cobb, CA</td>
+            <td>57</td>
+          </tr>
+          <tr class="table-info">
+  
+            <td>9 km ENE of Pāhala, Hawaii</td>
+            <td>55</td>
+          </tr>
+          <tr class="table-info">
+    
+            <td>8 km E of Pāhala, Hawaii</td>
+            <td>55</td>
+          </tr>
+          <tr class="table-info">
+          
+            <td>6 km SW of Volcano, Hawaii</td>
+            <td>55</td>
+          </tr>
+          <tr class="table-info">
+       
+            <td>6 km ENE of Pāhala, Hawaii</td>
+            <td>52</td>
+          </tr>
+          <tr class="table-info">
+      
+            <td>7 km E of Pāhala, Hawaii</td>
+            <td>52</td>
+          </tr>
+          <tr class="table-info">
+          
+            <td>31 km SE of Mina, Nevada</td>
+            <td>51</td>
+          </tr>
+          <tr class="table-info">
+        
+            <td>6 km E of Pāhala, Hawaii</td>
+            <td>50</td>
+          </tr>
+          <tr class="table-info">
+          
+            <td>7 km ENE of Pāhala, Hawaii</td>
+            <td>48</td>
+          </tr>
+          <tr class="table-info">
+        
+            <td>37 km NNE of Amboy, Washington</td>
+            <td>47</td>
+          </tr>
+          <tr class="table-info">
+         
+            <td>22 km E of Honaunau-Napoopoo, Hawaii</td>
+            <td>46</td>
+          </tr>
+          <tr class="table-info">
+       
+            <td>4 km S of Pāhala, Hawaii</td>
+            <td>44</td>
+          </tr>
+          <tr class="table-info">
+            <td>10 km ENE of Pāhala, Hawaii</td>
+            <td>44</td>
+          </tr>
+          <tr class="table-info">
+     
+            <td>8 km ENE of Pāhala, Hawaii</td>
+            <td>42</td>
+          </tr>
+          <tr class="table-info">
+            <td>23km ESE of Anza, CA</td>
+            <td>41</td>
+          </tr>
+          <tr class="table-info">
+       
+            <td>9km ENE of Coso Junction, CA</td>
+            <td>40</td>
+          </tr>
+          <tr class="table-info">
+
+            <td>55 km S of Whites City, New Mexico</td>
+            <td>40</td>
+          </tr>
+          <tr class="table-info">
+
+            <td>30 km SSE of Mina, Nevada</td>
+            <td>40</td>
+          </tr>
+          <tr class="table-info">
+            <td>24km SSW of La Quinta, CA</td>
+            <td>39</td>
+          </tr>
+        </tbody>
+
+
+        </table>
 <br>
-<p>Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
+<p>Updated Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
         document.getElementById("datetime").innerHTML=dt.toLocaleString();</script> 
 </div>
 </body>
