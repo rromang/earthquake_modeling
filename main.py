@@ -55,6 +55,11 @@ def viz1():
 def viz2():
     # """List all available api routes."""
     return render_template('initial_data.html')
+
+@app.route("/ML")
+def viz3():
+    # """List all available api routes."""
+    return render_template('ML_data.html')
         
 @app.route("/earthquakes")
 def earthquakes():

@@ -16,7 +16,7 @@
       </head>
 
 <body>
-
+<div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">Links</a>
@@ -40,16 +40,22 @@
                       <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('viz1') }}">Initial Data Exploration: SweetViz</a>
                       </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('viz3') }}">Machine Learning</a>
+                      </li>
                   </div>
                 </div>
               </nav>
 </div>
 <br>
+<div class="container">
 <div class="container-fluid">
   <button type="button" class="btn btn-outline-primary"><a href="#descr-stats">Descriptive Stats</a></button>
   <button type="button" class="btn btn-outline-primary"><a href="#categorical">Categorical Data</a></button>
   <button type="button" class="btn btn-outline-primary"><a href="#graphs">Graphs</a></button>
 
+</div>
+</div>
 </div>
 <hr>
 <br>
@@ -62,6 +68,13 @@ div {
   margin-right: auto;
   margin-left: auto;
 }
+#graphs {
+text-align:center;
+width:100%;
+display:block;
+margin:auto;
+}
+
 </style>
 
 <div class="container">
@@ -706,42 +719,35 @@ div {
                     col-lg-4 col-xl-6">
           <div class="container" id="graph-corr">
             <h4>Pearson Correlation for Numerical Parameters</h4>
-              <img src="static/images/corr.png" alt="corr">
+              <img src="static/images/corr.png" width="500" height="400" alt="corr">
              </div>
         </div>
         <div class="col-xs-2 col-sm-6 col-md-3 
                     col-lg-4 col-xl-6">
           <div class="container" id="20-loc">
             <h4>Top 20 Locations Earthquakes Detected</h4>
-              <img src="static/images/places50_count.png" alt="bar-top20">
+              <img src="static/images/places50_count.png" width="500" height="400" alt="bar-top20">
              </div>
         </div>
         <div class="col-xs-2 col-sm-6 col-md-3 
                     col-lg-4 col-xl-6">
           <div class="container" id="mag-count">
             <h4>Distribution Magnitudes for Earthquakes Detected</h4>
-              <img src="static/images/mag_count.png" alt="mag-count">
+              <img src="static/images/mag_count.png" width="500" height="400" alt="mag-count">
              </div>
         </div>
       <div class="col-xs-2 col-sm-6 col-md-3 
         col-lg-4 col-xl-6">
           <div class="container" id="depth-count">
             <h4>Distribution Depths for Earthquakes Detected</h4>
-        <img src="static/images/depth_count.png" alt="depth-count">
+        <img src="static/images/depth_count.png" width="500" height="400" alt="depth-count">
         </div>
       </div>
-      <div class="col-xs-2 col-sm-6 col-md-3 
-      col-lg-4 col-xl-6">
-      <div class="container" id="lat-count">
-        <h4>Distribution Depths for Earthquakes Detected</h4>
-        <img src="static/images/depth_count.png" alt="lat-count">
-      </div>
-    </div>
     <div class="col-xs-2 col-sm-6 col-md-3 
     col-lg-4 col-xl-6">
     <div class="container" id="lon-count">
       <h4>Distribution Longitudes for Earthquakes Detected</h4>
-      <img src="static/images/long_count.png" alt="lon-count">
+      <img src="static/images/long_count.png" width="500" height="400" alt="lon-count">
     </div>
   </div>
 
