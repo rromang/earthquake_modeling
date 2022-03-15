@@ -186,22 +186,45 @@ div {
   <h4>Extra Trees Regressor Model Graphs</h4>
   <br>
   <div class="container">
-    <h4><em>Predicting Magnitude</em></h4>
-    <div class="row">
-      <div class="column">
-        <img src="static/images/extratrees_mag_linear_sns.png" alt="mag-linear">
+    <h4><em>Predicting Magnitude (Features: Latitude, Longitude, Depth and Unix Time)</em></h4>
+    <div class="container">
+      <div class="row">
+        <div class="container">
+          <div class="column">
+            <img src="static/images/extratrees_mag_linear_sns.png" width="600" height="400" alt="etrees-mag">
+      
+          </div>
+          <div class="column">
+              <img src="static/images/extratrees_mag_linear_sns_daily.png" width="600" height="400" alt="etrees-mag-daily">
+          </div>
+          <p>The R-squared values for the plotted actual measured magnitude vs predicted magnitude using the test data subset from was relatively good at 0.861. When 
+            the model was used for predictions using the data from today's recorded earthquakes from the USGS Earthquake Hazards webpage,
+            the R-squared was slightly less but still relatively good.</p>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="container">
+            <h6><b>Model Performance</b></h6>
+            <hr>
+            <ul>
+              <li>MAE: 0.347909</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-
+  </div>
 </div>
-</div>
-
-</div>
-
 <div class="container">
-<footer>
-<p>Updated Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
+  <div class="row">
+    <div class="container">
+      <footer>
+        <p>Updated Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
         document.getElementById("datetime").innerHTML=dt.toLocaleString();</script> 
-</footer>
+      </footer>
+    </div>
+  </div>
 </div>
+
 </body>
 </html>
