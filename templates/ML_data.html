@@ -17,7 +17,6 @@
 
 <body>
 <div class="container">
-
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">Links</a>
@@ -83,14 +82,36 @@ div {
   display: table;
   clear: both;
 }
+#ML-extratrees-descr {
+  border-style: ridge;
+  border-style: ridge;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#mag-graphs {
+  border-style: ridge;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+}
+#magnotime-graphs {
+  border-style: ridge;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#lat-graphs {
+  border-style: ridge;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 </style>
 
 <br>
 <div class="container">
-<h3>Machine Learning</h3>
+<h3><strong>Machine Learning</strong></h3>
 <hr>
 <div class="row">
-  <h4>Extra Trees Regressor Model</h4>
+  <h4><i>Extra Trees Regressor Model</i></h4>
   <br>
   <p>This ensemble model was used for training a model to predict features from the USGS Earthquake data collected.</p>
   <br>
@@ -106,9 +127,9 @@ div {
   <p>The model was run 9 times with the predicted feature alternatining as follows:</p>
 </div>
 
-<div class="row">
+<div class="row" id="ML-extratrees-descr">
   <div class="column" >
-    <h6 class="mb-1">Magnitude Prediction</h6>
+    <h6 class="mb-1"><em>Magnitude Prediction</em></h6>
       <ul>
       <li>Magnitude (y)</li>
       <li>Latitude (x)</li>
@@ -116,7 +137,7 @@ div {
       <li>Depth (x)</li>
       <li>Unix Time (x)</li>
     </ul>
-    <h6 class="mb-1">Latitude Prediction</h6>
+    <h6 class="mb-1"><em>Latitude Prediction</em></h6>
     <ul>
     <li>Magnitude (x)</li>
     <li>Latitude (y)</li>
@@ -124,7 +145,7 @@ div {
     <li>Depth (x)</li>
     <li>Unix Time (x)</li>
   </ul>
-  <h6 class="mb-1">Longitude Prediction</h6>
+  <h6 class="mb-1"><em>Longitude Prediction</em></h6>
     <ul>
     <li>Magnitude (x)</li>
     <li>Latitude (x)</li>
@@ -132,7 +153,7 @@ div {
     <li>Depth (x)</li>
     <li>Unix Time (x)</li>
   </ul>
-  <h6 class="mb-1">Depth Prediction</h6>
+  <h6 class="mb-1"><em>Depth Prediction</em></h6>
     <ul>
     <li>Magnitude (x)</li>
     <li>Latitude (x)</li>
@@ -140,7 +161,7 @@ div {
     <li>Depth (y)</li>
     <li>Unix Time (x)</li>
   </ul>
-  <h6 class="mb-1">Unix Time Prediction</h6>
+  <h6 class="mb-1"><em>Unix Time Prediction</em></h6>
   <ul>
   <li>Magnitude (x)</li>
   <li>Latitude (x)</li>
@@ -150,28 +171,28 @@ div {
 </ul>
   </div>
   <div class="column">
-    <h6 class="mb-1">Magnitude Prediction - No Unix Time</h6>
+    <h6 class="mb-1"><em>Magnitude Prediction - No Unix Time</em></h6>
       <ul>
       <li>Magnitude (y)</li>
       <li>Latitude (x)</li>
       <li>Longitude (x)</li>
       <li>Depth (x)</li>
     </ul>
-    <h6 class="mb-1">Latitude Prediction - No Unix Time</h6>
+    <h6 class="mb-1"><em>Latitude Prediction - No Unix Time</em></h6>
     <ul>
     <li>Magnitude (x)</li>
     <li>Latitude (y)</li>
     <li>Longitude (x)</li>
     <li>Depth (x)</li>
   </ul>
-  <h6 class="mb-1">Longitude Prediction - No Unix Time</h6>
+  <h6 class="mb-1"><em>Longitude Prediction - No Unix Time</em></h6>
   <ul>
   <li>Magnitude (x)</li>
   <li>Latitude (x)</li>
   <li>Longitude (y)</li>
   <li>Depth (x)</li>
 </ul>
-<h6 class="mb-1">Depth Prediction - No Unix Time</h6>
+<h6 class="mb-1"><em>Depth Prediction - No Unix Time</em></h6>
 <ul>
 <li>Magnitude (x)</li>
 <li>Latitude (x)</li>
@@ -180,79 +201,79 @@ div {
 </ul>
   </div>
 </div>
-
-</div>
 <hr>
+</div>
+
 <div class="row" id="etrees-graphs">
   <h4>Extra Trees Regressor Model Graphs</h4>
-  <br>
-  <div class="container">
-    <h4><em>Predicting Magnitude (Features: Latitude, Longitude, Depth and Unix Time)</em></h4>
-    <div class="container">
-      <div class="row">
-        <div class="container">
-          <div class="column">
-            <img src="static/images/extratrees_mag_linear_sns.png" width="600" height="400" alt="etrees-mag">
-      
+    <br>
+    <div class="container" style="margin-bottom: 40px">
+      <h4><em>Predicting Magnitude (Features: Latitude, Longitude, Depth and Unix Time)</em></h4>
+        <div class="container" id="mag-graphs">
+          <div class="row">
+            <div class="container">
+              <div class="column">
+                <img src="static/images/extratrees_mag_linear_sns.png" width="600" height="400" alt="etrees-mag">
+          
+              </div>
+              <div class="column">
+                  <img src="static/images/extratrees_mag_linear_sns_daily.png" width="600" height="400" alt="etrees-mag-daily">
+              </div>
+              <p>The models will be run with larger datasets as time goes by to assess if they become better with a larger dataset.</p>
           </div>
-          <div class="column">
-              <img src="static/images/extratrees_mag_linear_sns_daily.png" width="600" height="400" alt="etrees-mag-daily">
-          </div>
-          <p>The models will be run with larger datasets as time goes by to assess if they become better with a larger dataset.</p>
-      </div>
-      <div class="container">
-        <div class="card">
           <div class="container">
-      <table class="table table-hover" id="table-historical-model">
-        <style>
-          table, td, th {
-            border: 1px solid black;
-          }
-          table {
-            border-collapse: collapse;
-            table-layout: auto;
-            width: 180px;
-          }
-          </style>
-          <h4>Historical Information About Model Performance</h4>
-        <thead>
-          <tr style="text-align: left;">
-            <th scope="col">Date</th>
-            <th scope="col">Count of Data Rows</th>
-            <th scope="col">RMSE</th>
-            <th scope="col">MAE</th>
-            <th scope="col">R-squared Actual vs Predicted Test Set</th>
-            <th scope="col">R-squared Actual vs Predicted Daily Set</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="table-info">
-            <td>2022-03-14</th>
-            <td>28335</td>
-            <td>0.478</td>
-            <td>0.348</td>
-            <td>0.861</td>
-            <td>0.835</td>
-          </tr>
-          <tr class="table-info">
-            <td>2022-03-17</th>
-            <td>33894</td>
-            <td>0.476</td>
-            <td>0.348</td>
-            <td>0.861</td>
-            <td>0.917</td>
-          </tr>
-        </tbody>
-      </table>
+            <div class="card">
+              <div class="container">
+                <table class="table table-hover" id="table-historical-model">
+                <style>
+                table, td, th {
+                border: 1px solid black;
+                }
+                table {
+                border-collapse: collapse;
+                table-layout: auto;
+                width: 180px;
+                }
+                </style>
+            <h4>Historical Information About Model Performance</h4>
+                  <thead>
+                    <tr style="text-align: left;">
+                      <th scope="col">Date</th>
+                      <th scope="col">Count of Data Rows</th>
+                      <th scope="col">RMSE</th>
+                      <th scope="col">MAE</th>
+                      <th scope="col">R-squared Actual vs Predicted Test Set</th>
+                      <th scope="col">R-squared Actual vs Predicted Daily Set</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="table-info">
+                      <td>2022-03-14</th>
+                      <td>28335</td>
+                      <td>0.478</td>
+                      <td>0.348</td>
+                      <td>0.861</td>
+                      <td>0.835</td>
+                    </tr>
+                    <tr class="table-info">
+                      <td>2022-03-17</th>
+                      <td>33894</td>
+                      <td>0.476</td>
+                      <td>0.348</td>
+                      <td>0.861</td>
+                      <td>0.917</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-  </div>
     </div>
-  </div>
-  <div class="container">
+</div>
+  <div class="container" style="margin-bottom: 40px">
     <h4><em>Predicting Magnitude (Features: Latitude, Longitude and Depth)</em></h4>
-    <div class="container">
+    <div class="container" id="magnotime-graphs">
       <div class="row">
         <div class="container">
           <div class="column">
@@ -316,7 +337,138 @@ div {
     </div>
   </div>
 </div>
-
+<!-- -----------------------Add new section of graphs and table -->
+<div class="container" style="margin-bottom: 40px">
+  <h4><em>Predicting Latitude (Features: Magnitude, Longitude, Depth and Unix Time)</em></h4>
+    <div class="container" id="lat-graphs">
+      <div class="row">
+        <div class="container">
+          <div class="column">
+            <img src="static/images/extratrees_lat_linear_sns.png" width="600" height="400" alt="etrees-mag">
+      
+          </div>
+          <div class="column">
+              <img src="static/images/extratrees_lat_linear_sns_daily.png" width="600" height="400" alt="etrees-mag-daily">
+          </div>
+          <p>The models will be run with larger datasets as time goes by to assess if they become better with a larger dataset.</p>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="container">
+            <table class="table table-hover" id="table-historical-model">
+            <style>
+            table, td, th {
+            border: 1px solid black;
+            }
+            table {
+            border-collapse: collapse;
+            table-layout: auto;
+            width: 180px;
+            }
+            </style>
+        <h4>Historical Information About Model Performance</h4>
+              <thead>
+                <tr style="text-align: left;">
+                  <th scope="col">Date</th>
+                  <th scope="col">Count of Data Rows</th>
+                  <th scope="col">RMSE</th>
+                  <th scope="col">MAE</th>
+                  <th scope="col">R-squared Actual vs Predicted Test Set</th>
+                  <th scope="col">R-squared Actual vs Predicted Daily Set</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-info">
+                  <td>2022-03-3</th>
+                  <td>28329</td>
+                  <td>6.435</td>
+                  <td>--</td>
+                  <td>0.898</td>
+                  <td>0.878</td>
+                </tr>
+                <tr class="table-info">
+                  <td>2022-03-17</th>
+                  <td>33888</td>
+                  <td>6.546</td>
+                  <td>1.93</td>
+                  <td>0.896</td>
+                  <td>0.963</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+<!-- -------End new section of graphs and table---- -->
+<!-- -----------------------Add new section of graphs and table -->
+<div class="container" style="margin-bottom: 40px">
+  <h4><em>Predicting Latitude (Features: Magnitude, Longitude and Depth)</em></h4>
+    <div class="container" id="lat-graphs">
+      <div class="row">
+        <div class="container">
+          <div class="column">
+            <img src="static/images/extratrees_latnotime_linear_sns.png" width="600" height="400" alt="etrees-mag">
+      
+          </div>
+          <div class="column">
+              <img src="static/images/extratrees_latnotime_linear_sns_daily.png" width="600" height="400" alt="etrees-mag-daily">
+          </div>
+          <p>The models will be run with larger datasets as time goes by to assess if they become better with a larger dataset.</p>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="container">
+            <table class="table table-hover" id="table-historical-model">
+            <style>
+            table, td, th {
+            border: 1px solid black;
+            }
+            table {
+            border-collapse: collapse;
+            table-layout: auto;
+            width: 180px;
+            }
+            </style>
+        <h4>Historical Information About Model Performance</h4>
+              <thead>
+                <tr style="text-align: left;">
+                  <th scope="col">Date</th>
+                  <th scope="col">Count of Data Rows</th>
+                  <th scope="col">RMSE</th>
+                  <th scope="col">MAE</th>
+                  <th scope="col">R-squared Actual vs Predicted Test Set</th>
+                  <th scope="col">R-squared Actual vs Predicted Daily Set</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-info">
+                  <td>2022-03-3</th>
+                  <td>28329</td>
+                  <td>6.734</td>
+                  <td>--</td>
+                  <td>0.888</td>
+                  <td>0.812</td>
+                </tr>
+                <tr class="table-info">
+                  <td>2022-03-18</th>
+                  <td>33888</td>
+                  <td>6.888</td>
+                  <td>1.906</td>
+                  <td>0.885</td>
+                  <td>0.845</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+<!-- -------End new section of graphs and table---- -->
 <br>
 </div>
 <!-- --------------- -->
