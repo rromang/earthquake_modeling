@@ -180,8 +180,9 @@ div {
 </ul>
   </div>
 </div>
-<hr>
+
 </div>
+<hr>
 <div class="row" id="etrees-graphs">
   <h4>Extra Trees Regressor Model Graphs</h4>
   <br>
@@ -197,22 +198,122 @@ div {
           <div class="column">
               <img src="static/images/extratrees_mag_linear_sns_daily.png" width="600" height="400" alt="etrees-mag-daily">
           </div>
-          <p>The R-squared values for the plotted actual measured magnitude vs predicted magnitude using the test data subset was relatively good at 0.861. When 
-            the model was used for predictions using the data from today's recorded earthquakes from the USGS Earthquake Hazards webpage,
-            the R-squared was slightly less but still relatively good.</p>
+          <p>The models will be run with larger datasets as time goes by to assess if they become better with a larger dataset.</p>
       </div>
       <div class="container">
         <div class="card">
           <div class="container">
-            <h6><b>Model Performance</b></h6>
-            <hr>
-            <ul>
-              <li>RMSE: 0.478</li>
-              <li>MAE: 0.348</li>
-            </ul>
+      <table class="table table-hover" id="table-historical-model">
+        <style>
+          table, td, th {
+            border: 1px solid black;
+          }
+          table {
+            border-collapse: collapse;
+            table-layout: auto;
+            width: 180px;
+          }
+          </style>
+          <h4>Historical Information About Model Performance</h4>
+        <thead>
+          <tr style="text-align: left;">
+            <th scope="col">Date</th>
+            <th scope="col">Count of Data Rows</th>
+            <th scope="col">RMSE</th>
+            <th scope="col">MAE</th>
+            <th scope="col">R-squared Actual vs Predicted Test Set</th>
+            <th scope="col">R-squared Actual vs Predicted Daily Set</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-info">
+            <td>2022-03-14</th>
+            <td>28335</td>
+            <td>0.478</td>
+            <td>0.348</td>
+            <td>0.861</td>
+            <td>0.835</td>
+          </tr>
+          <tr class="table-info">
+            <td>2022-03-17</th>
+            <td>33894</td>
+            <td>0.476</td>
+            <td>0.348</td>
+            <td>0.861</td>
+            <td>0.917</td>
+          </tr>
+        </tbody>
+      </table>
           </div>
         </div>
       </div>
+  </div>
+    </div>
+  </div>
+  <div class="container">
+    <h4><em>Predicting Magnitude (Features: Latitude, Longitude and Depth)</em></h4>
+    <div class="container">
+      <div class="row">
+        <div class="container">
+          <div class="column">
+            <img src="static/images/extratrees_mag_notime_linear.png" width="600" height="400" alt="etrees-mag-notime">
+      
+          </div>
+          <div class="column">
+              <img src="static/images/extratrees_mag_notime_linear_sns.png" width="600" height="400" alt="etrees-mag-notime-daily">
+          </div>
+          <p>The models will be run with larger datasets as time goes by to assess if they become better with a larger dataset.</p>
+          <br>
+          <p>This model does not take time into account as one of the features for training the model.</p>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="container">
+      <table class="table table-hover" id="table-historical-model">
+        <style>
+          table, td, th {
+            border: 1px solid black;
+          }
+          table {
+            border-collapse: collapse;
+            table-layout: auto;
+            width: 180px;
+          }
+          </style>
+          <h4>Historical Information About Model Performance</h4>
+        <thead>
+          <tr style="text-align: left;">
+            <th scope="col">Date</th>
+            <th scope="col">Count of Data Rows</th>
+            <th scope="col">RMSE</th>
+            <th scope="col">MAE</th>
+            <th scope="col">R-squared Actual vs Predicted Test Set</th>
+            <th scope="col">R-squared Actual vs Predicted Daily Set</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-info">
+            <td>2022-03-11</th>
+            <td>28329</td>
+            <td>0.495</td>
+            <td>--</td>
+            <td>0.851</td>
+            <td>0.823</td>
+          </tr>
+          <tr class="table-info">
+            <td>2022-03-17</th>
+            <td>33894</td>
+            <td>0.476</td>
+            <td>0.348</td>
+            <td>0.861</td>
+            <td>0.949</td>
+          </tr>
+        </tbody>
+      </table>
+          </div>
+        </div>
+      </div>
+  </div>
     </div>
   </div>
 </div>
