@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Equake Modeling</title>
+    <!-- Bootstrap -->
+  <link href="../static/css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+       <a class="navbar-brand" href="#"><img src="../static/images/logo.jpg" width="80" height="82" alt=""/></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+                <a class="nav-link" href="https://portfolio-site-main.herokuapp.com/portfolio" id="home">HOME <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="https://equake-api.herokuapp.com" id="earthquakes">Earthquakes API</a>
+             </li>
+			 <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('viz2') }}" id="EDA">Initial<br>EDA</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="{{ url_for('viz1') }}" id="SV-EDA">SweetViz<br>EDA</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="{{ url_for('viz3') }}" id="ML">Machine<br>Learning</a>
+            </li>
+			 <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/rosaicelarg" id="linkedin"><img src="../static/images/LI-In-Bug.png" width="64" height="55" alt="linkedin"/></a>
+             </li>
+			 <li class="nav-item">
+                <a class="nav-link" href="https://github.com/rromang" id="github"><img src="../static/images/GitHub-Mark-Light-32px.png" width="49" height="47" alt="github"/></a>
+             </li>
+          </ul>
+       </div>
+    </nav>
+    <section>
+      <div class="jumbotron jumbotron-fluid text-center">		  
+         <h1 class="display-4" id="title">Earthquake Modeling</h1>
+                <p class="lead" id="desc">Data Analysis and Data Visualization</p>
+               <p class="hor-line"><img src="../static/images/Rectangle_4.png" width="892" height="14" alt=""/></p>
+             </div>
+             </section>
+             <section id="portfolio-work">
+             <div class="container">
+                <br>
+                <hr>
+                <br>
+                <div class="row">
+                   <div class="col-md-4 d-flex align-items-stretch">
+                      <div class="card">
+                         <img class="card-img-top" src="../static/images/graphs.jpeg" alt="graphs">
+                         <div class="card-body">
+                            <h4 class="card-title">Initial Data Exploration</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">A look at the data to see some initial insights. </h6>
+                        <p class="card-text">Data extracted/collected from USGS Earthquake Hazards Programs.</p>
+							 <p></p>
+							<br>
+							  <p></p>
+							 	<br>
+  
+<div class="d-flex flex-row justify-content-center mt-auto">
+                            <a href="{{ url_for('viz2') }}" class="btn btn-primary" id="equake-EDA-btn">EDA</a>
+                            <a href="{{ url_for('viz1') }}" class="btn btn-primary" id="SweetViz-EDA-btn">SweetViz: EDA</a>
+							 </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="col-md-4 d-flex align-items-stretch">
+                      <div class="card">
+                        <img class="card-img-top" src="../static/images/ml.jpeg" height="225" alt="ml">
+                         <div class="card-body">
+                           <h4 class="card-title">Machine Learning</h4>
+                           <h6 class="card-subtitle mb-2 text-muted">The data collected was used to train Machine Learning Models. </h6>
+                           <p class="card-text">Data extracted/collected from USGS Earthquake Hazards Programs.</p>
+                           <p class="card-text">Models used: Extra Trees Regressor and TensorFlow Neural Network.</p>
+<div class="d-flex flex-row justify-content-center mt-auto">
+                           <a href="{{ url_for('viz3') }}" class="btn btn-primary" id="ML-btn">Machine Learning</a>
+                         </div>
+							  </div>
+                      </div>
+                   </div>
+                </div>
+                <br/>
+                <br/>
+				 <br/>
+         
+         
+                <br>
+                <hr>
+            
+         
+             </div>
+         </section>
+                      <footer class="text-center" id="footer">
+               <div class="container">
+                 <div class="row">
+                   <div class="col-12">
+                     <p id="copy">Copyright © R. Roman. All rights reserved.</p>
+                  <p id="date"><script>
+                      var today = new Date; document.getElementById('date').innerHTML= today.toDateString();</script>
+                      </p> 
+                   </div>
+                 </div>
+               </div>
+             </footer>
+             <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+             <script src="js/jquery-3.4.1.min.js"></script>
+         
+             <!-- Include all compiled plugins (below), or include individual files as needed --> 
+             <script src="js/popper.min.js"></script>
+             <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
