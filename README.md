@@ -4,6 +4,9 @@
 ----------------------------
 API can be found: https://earthquake-ml-app.herokuapp.com
 ----------------------------
+----------------------------
+## 5/12/2022 --> Having difficulties deploying updated branch in Heroku directly from GitHub. Will attempt to use Heroku CLI.
+
 ### Note: Part of the inspiration/ideas for some of the modeling machine learning code came from: https://www.kaggle.com/chenzecharya/earthquake-random-forest.
 
 ## Part One: Creation of Databases and Deployment of Earthquake API
