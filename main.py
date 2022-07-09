@@ -17,34 +17,14 @@ import json
 # #################################################
 app = Flask(__name__, static_url_path='/static/')
 
-#################################################
-# Database Setup
-#################################################
-engine = create_engine("sqlite:///Database/db/earthquake_db")
-
-metadata_obj = MetaData()
-metadata_obj.reflect(bind=engine)
-# Earthquakes = metadata_obj.tables['earthquake_raw']
-earthquakes = Table('earthquake_raw', metadata_obj, autoload_with=engine)
-columns = [c.name for c in earthquakes.columns]
-# print(columns)
-
-Base = automap_base(metadata=metadata_obj)
-Base.prepare()
-# print(Base.classes.keys())
-Earthquakes = Base.classes.earthquake_raw
-# print(Earthquakes)
-
 # #################################################
 # # Flask Routes
 # #################################################
-with open('Database/json/earthquake.json', 'r') as myfile:
-    data = myfile.read()
 
 @app.route("/")
 def welcome():
     # """List all available api routes."""
-    return render_template('home.html')
+    return render_template('index.html')
 
 @app.route("/sweetviz")
 def viz1():
@@ -60,10 +40,8 @@ def viz2():
 def viz3():
     # """List all available api routes."""
     return render_template('ML_data.html')
-        
-@app.route("/earthquakes")
-def earthquakes():
-    session = Session(engine)
+
+
 
     """Return a list of all earthquake information"""
         # Query all measurements

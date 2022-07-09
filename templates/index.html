@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio (HomePage)</title>
+    <title>Equake Modeling</title>
     <!-- Bootstrap -->
   <link href="../static/css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
   </head>
@@ -22,9 +22,15 @@
              <li class="nav-item">
                 <a class="nav-link" href="{{ url_for('earthquakes') }}" id="earthquakes">Earthquakes API</a>
              </li>
-			 <!-- <li class="nav-item">
-                <a class="nav-link" href="https://flic.kr/ps/3y7UMF" id="hobby">Amateur<br>Photography</a>
-             </li> -->
+			 <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('viz2') }}" id="hobby">Initial<br>EDA</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="{{ url_for('viz1') }}" id="hobby">SweetViz<br>EDA</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="{{ url_for('viz3') }}" id="hobby">Machine<br>Learning</a>
+            </li>
 			 <li class="nav-item">
                 <a class="nav-link" href="https://www.linkedin.com/in/rosaicelarg" id="linkedin"><img src="../static/images/LI-In-Bug.png" width="64" height="55" alt="linkedin"/></a>
              </li>
@@ -35,44 +41,82 @@
        </div>
     </nav>
     <section>
-   <div class="jumbotron jumbotron-fluid text-center">		  
-      <h1 class="display-4" id="title-equake-api">Earthquake API</h1>
-
-     <p class="hor-line"><img src="../static/images/Rectangle_4.png" width="892" height="14" alt=""/></p>
-       <p id="hero-text1">Objectives:</p>
-       <p class="lead">
-		   <div class="container" id="hero-text">
-		   <ul>
-			   <li>Obtain the information from:<a href="https://www.usgs.gov/programs/earthquake-hazards/earthquakes">USGS Hazards Program</a></li>
-			   <li>Place the information collected as part of a database to be accessed for data exploration, data visualization,training the model(s), etc.</li>
-			   <li>Create and deploy an API with the information.</li>
-			   <li>Regularly maintain the database and the API by updating and adding the new earthquake information so the dataset is relatively large.</li>
-	   </ul>
-		</div>
-       </p>
-		 <p class="hor-line"><img src="../static/images/Rectangle_4.png" width="892" height="14" alt=""/></p>
-		       <p class="lead">
-          <a class="btn btn-primary btn-lg" href="{{ url_for('earthquakes') }}" role="button" id="api-btn">EARTHQUAKE API</a>
-       </p>
-    </div>
-    </section>
-
-    <footer class="text-center" id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p id="copy">Copyright © R. Roman. All rights reserved.</p>
-			<p id="date"><script>
-    			var today = new Date; document.getElementById('date').innerHTML= today.toDateString();</script>
-             </p> 
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="../static/js/jquery-3.4.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../static/js/popper.min.js"></script>
-    <script src="../static/js/bootstrap-4.4.1.js"></script>
+      <div class="jumbotron jumbotron-fluid text-center">		  
+         <h1 class="display-4" id="title">Earthquake Modeling</h1>
+                <p class="lead" id="desc">Data Analysis and Data Visualization</p>
+               <p class="hor-line"><img src="../static/images/Rectangle_4.png" width="892" height="14" alt=""/></p>
+             </div>
+             </section>
+             <section id="portfolio-work">
+             <div class="container">
+                <br>
+                <hr>
+                <br>
+                <div class="row">
+                   <div class="col-md-4">
+                      <div class="card">
+                         <img class="card-img-top" src="../static/images/equake_measure.jpeg" alt="Card image cap">
+                         <div class="card-body">
+                            <h4 class="card-title">Initial Data Exploration</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">A look at the data to see some initial insights. </h6>
+                        <p class="card-text">Data extracted/collected from USGS Earthquake Hazards Programs.</p>
+                            <br><br><br><br>
+                            <a href="{{ url_for('viz2') }}" class="btn btn-primary" id="equake-EDA-btn">EDA</a>
+                            <a href="{{ url_for('viz1') }}" class="btn btn-primary" id="SweetViz-EDA-btn">SweetViz: EDA</a>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="col-md-4">
+                      <div class="card">
+                        <img class="card-img-top" src="../static/images/earthquake_banner_vector.jpg" height="190" alt="equake_banner">
+                         <div class="card-body">
+                           <h4 class="card-title">Machine Learning</h4>
+                           <h6 class="card-subtitle mb-2 text-muted">The data collected was used to train Machine Learning Models. </h6>
+                           <p class="card-text">Data extracted/collected from USGS Earthquake Hazards Programs.</p>
+                           <p class="card-text">Models used: Extra Trees Regressor and TensorFlow Neural Network.</p>
+                           <a href="{{ url_for('viz3') }}" class="btn btn-primary" id="ML-btn">Machine Learning</a>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="col-md-4">
+                      <div class="card">
+                  <img class="card-img-top" src="../static/images/bike.jpeg" id="bike" alt="bike-person">
+                        <div class="card-body">
+                            <h4 class="card-title">CitiBike Rental Behaviors</h4>
+                            <p class="card-text">Analysis and vizualizations of bike rental behavior in NY comparing April of 2018, 2019 and 2020. Data seems to indicate there was a significant significant drop in the # of rental due to the pandemic. </p>
+                            <br><br><br>
+                            <a href="https://public.tableau.com/views/citibike_rental_exploration/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" class="btn btn-primary" id="tableau-citibike-btn">CitiBike Viz</a>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <br/>
+                <br/>
+         
+         
+                <br>
+                <hr>
+            
+         
+             </div>
+         </section>
+                      <footer class="text-center" id="footer">
+               <div class="container">
+                 <div class="row">
+                   <div class="col-12">
+                     <p id="copy">Copyright © R. Roman. All rights reserved.</p>
+                  <p id="date"><script>
+                      var today = new Date; document.getElementById('date').innerHTML= today.toDateString();</script>
+                      </p> 
+                   </div>
+                 </div>
+               </div>
+             </footer>
+             <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+             <script src="js/jquery-3.4.1.min.js"></script>
+         
+             <!-- Include all compiled plugins (below), or include individual files as needed --> 
+             <script src="js/popper.min.js"></script>
+             <script src="js/bootstrap-4.4.1.js"></script>
   </body>
 </html>
