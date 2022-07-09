@@ -2513,11 +2513,12 @@ textarea.form-control {
 }
 
 .btn {
-  display: inline-block;
+	padding-bottom: 0;
+  display: inline-flex;
   font-weight: 400;
   color: #212529;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: bottom;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2530,6 +2531,7 @@ textarea.form-control {
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	margin-top: auto;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -4761,6 +4763,8 @@ input[type="button"].btn-block {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
+	background-color: #fbebd2;
+		
 }
 
 .card-title {
@@ -10594,6 +10598,51 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #api-btn {
+			font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color: #fcfcfb;
+	font-size: 25px;
+	font-weight: 700;
+	border-radius: 5px;
+	background-color: #f69d7f;
+}
+
+#EDA {
+		
+	color: white;
+	text-align: center;
+}
+
+#SV-EDA {
+		
+	color: white;
+	text-align: center;
+}
+
+#ML {
+		
+	color: white;
+	text-align: center;
+}
+
+#equake-EDA-btn {
+			font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color: #fcfcfb;
+	font-size: 25px;
+	font-weight: 700;
+	border-radius: 5px;
+	background-color: #f69d7f;
+}
+
+#SweetViz-EDA-btn {
+			font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color: #fcfcfb;
+	font-size: 25px;
+	font-weight: 700;
+	border-radius: 5px;
+	background-color: #f69d7f;
+}
+
+#ML-btn {
 			font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	color: #fcfcfb;
 	font-size: 25px;

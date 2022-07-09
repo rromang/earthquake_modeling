@@ -20,16 +20,16 @@
                 <a class="nav-link" href="https://portfolio-site-main.herokuapp.com/portfolio" id="home">HOME <span class="sr-only">(current)</span></a>
              </li>
              <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('earthquakes') }}" id="earthquakes">Earthquakes API</a>
+                <a class="nav-link" href="https://equake-api.herokuapp.com" id="earthquakes">Earthquakes API</a>
              </li>
 			 <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('viz2') }}" id="hobby">Initial<br>EDA</a>
+                <a class="nav-link" href="{{ url_for('viz2') }}" id="EDA">Initial<br>EDA</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" href="{{ url_for('viz1') }}" id="hobby">SweetViz<br>EDA</a>
+               <a class="nav-link" href="{{ url_for('viz1') }}" id="SV-EDA">SweetViz<br>EDA</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="{{ url_for('viz3') }}" id="hobby">Machine<br>Learning</a>
+               <a class="nav-link" href="{{ url_for('viz3') }}" id="ML">Machine<br>Learning</a>
             </li>
 			 <li class="nav-item">
                 <a class="nav-link" href="https://www.linkedin.com/in/rosaicelarg" id="linkedin"><img src="../static/images/LI-In-Bug.png" width="64" height="55" alt="linkedin"/></a>
@@ -53,45 +53,43 @@
                 <hr>
                 <br>
                 <div class="row">
-                   <div class="col-md-4">
+                   <div class="col-md-4 d-flex align-items-stretch">
                       <div class="card">
-                         <img class="card-img-top" src="../static/images/equake_measure.jpeg" alt="Card image cap">
+                         <img class="card-img-top" src="../static/images/graphs.jpeg" alt="graphs">
                          <div class="card-body">
                             <h4 class="card-title">Initial Data Exploration</h4>
                             <h6 class="card-subtitle mb-2 text-muted">A look at the data to see some initial insights. </h6>
                         <p class="card-text">Data extracted/collected from USGS Earthquake Hazards Programs.</p>
-                            <br><br><br><br>
+							 <p></p>
+							<br>
+							  <p></p>
+							 	<br>
+  
+<div class="d-flex flex-row justify-content-center mt-auto">
                             <a href="{{ url_for('viz2') }}" class="btn btn-primary" id="equake-EDA-btn">EDA</a>
                             <a href="{{ url_for('viz1') }}" class="btn btn-primary" id="SweetViz-EDA-btn">SweetViz: EDA</a>
+							 </div>
                          </div>
                       </div>
                    </div>
-                   <div class="col-md-4">
+                   <div class="col-md-4 d-flex align-items-stretch">
                       <div class="card">
-                        <img class="card-img-top" src="../static/images/earthquake_banner_vector.jpg" height="190" alt="equake_banner">
+                        <img class="card-img-top" src="../static/images/ml.jpeg" height="225" alt="ml">
                          <div class="card-body">
                            <h4 class="card-title">Machine Learning</h4>
                            <h6 class="card-subtitle mb-2 text-muted">The data collected was used to train Machine Learning Models. </h6>
                            <p class="card-text">Data extracted/collected from USGS Earthquake Hazards Programs.</p>
                            <p class="card-text">Models used: Extra Trees Regressor and TensorFlow Neural Network.</p>
+<div class="d-flex flex-row justify-content-center mt-auto">
                            <a href="{{ url_for('viz3') }}" class="btn btn-primary" id="ML-btn">Machine Learning</a>
                          </div>
-                      </div>
-                   </div>
-                   <div class="col-md-4">
-                      <div class="card">
-                  <img class="card-img-top" src="../static/images/bike.jpeg" id="bike" alt="bike-person">
-                        <div class="card-body">
-                            <h4 class="card-title">CitiBike Rental Behaviors</h4>
-                            <p class="card-text">Analysis and vizualizations of bike rental behavior in NY comparing April of 2018, 2019 and 2020. Data seems to indicate there was a significant significant drop in the # of rental due to the pandemic. </p>
-                            <br><br><br>
-                            <a href="https://public.tableau.com/views/citibike_rental_exploration/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" class="btn btn-primary" id="tableau-citibike-btn">CitiBike Viz</a>
-                         </div>
+							  </div>
                       </div>
                    </div>
                 </div>
                 <br/>
                 <br/>
+				 <br/>
          
          
                 <br>
