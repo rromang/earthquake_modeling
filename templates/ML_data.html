@@ -4,7 +4,7 @@
   
 </br>
 </br>
-<title>Earthquakes Data: Initial Data Exploration</title>
+<title>Earthquakes Data: Machine Learning</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
 <link href="../static/css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
@@ -575,16 +575,27 @@ div {
 <br>
 </div>
 <!-- --------------- -->
-<div class="container">
-  <div class="row">
-    <div class="container">
-      <footer>
-        <p>Updated Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
+                      <footer class="text-center" id="footer">
+               <div class="container">
+                 <div class="row">
+                   <div class="col-12">
+                     <p id="copy">Copyright © R. Roman. All rights reserved.</p>
+                  <p id="date"><script>
+                      var today = new Date; document.getElementById('date').innerHTML= today.toDateString();</script>
+                      </p> 
+					           <p id="update-text">Updated Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
         document.getElementById("datetime").innerHTML=dt.toLocaleString();</script> 
-      </footer>
-    </div>
-  </div>
-</div>
+                   </div>
+                 </div>
+               </div>
+             </footer>
+             <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+             <script src="js/jquery-3.4.1.min.js"></script>
+         
+             <!-- Include all compiled plugins (below), or include individual files as needed --> 
+             <script src="js/popper.min.js"></script>
+             <script src="js/bootstrap-4.4.1.js"></script>
+
 
 </body>
 </html>

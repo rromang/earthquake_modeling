@@ -548,6 +548,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 }
 
 @media (min-width: 576px) {
@@ -10650,3 +10651,18 @@ a.text-dark:hover, a.text-dark:focus {
 	border-radius: 5px;
 	background-color: #f69d7f;
 }
+
+#datetime {
+	color: white;
+}
+
+#update-text {
+	color: white;
+}
+
+#features {
+	display: inline-block;
+	text-align: left;
+}
+
+
