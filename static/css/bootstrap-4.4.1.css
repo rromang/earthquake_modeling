@@ -10819,3 +10819,40 @@ a.text-dark:hover, a.text-dark:focus {
 #table-timedaily {
 	display: inline-table;
 }
+
+#cat-data-desc {
+		justify-content: flex-end;
+	 margin: auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#table-cat-data-desc {
+	display: inline-table;
+}
+
+#num-data-desc {
+		justify-content: flex-end;
+	 margin: auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#table-num-data-desc {
+	display: inline-table;
+}
+
+#table-plc-data-desc {
+	width: 600px;
+	display: inline-table;
+}
+
+#table-mag-data-desc {
+		width: 300px;
+	display: inline-table;
+}
+
+#table-src-data-desc {
+	width: 250px;
+	display: inline-table;
+}
