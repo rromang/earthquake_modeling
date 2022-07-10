@@ -10666,3 +10666,156 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 
+
+#table-dep-notime {
+	justify-content: flex-end;
+	 margin: auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#table-depnotime {
+	display: inline-table;
+}
+
+#table-dep-notime-daily {
+		justify-content: flex-end;
+	 margin: auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#table-depnotime-daily {
+		display: inline-table;
+}
+
+#table-dep {
+			justify-content: flex-end;
+	 margin: auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#tabledep {
+	display: inline-table;
+}
+
+
+
+#graphs-2 {
+	border-top: thin;
+}
+
+#table-dep-daily {
+				justify-content: flex-end;
+	 margin: auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#table-depdaily {
+	display: inline-table;
+}
+
+#tablelat {
+	display: inline-table;
+}
+
+#table-lon {
+					justify-content: flex-end;
+	 margin: auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#table-lat-daily {
+					justify-content: flex-end;
+	 margin: auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#table-lat-notime {
+					justify-content: flex-end;
+	 margin: auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#table-latnotime-daily {
+					justify-content: flex-end;
+	 margin: auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#table-time {
+					justify-content: flex-end;
+	 margin: auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#table-time-daily {
+					justify-content: flex-end;
+	 margin: auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#table-latdaily {
+	display: inline-table;
+}
+
+#tablelat-notime {
+	display:inline-table;
+}
+
+#table-lat-notime-daily {
+	display: inline-table;
+}
+
+#tablelon {
+	display: inline-table;
+}
+
+#table-lon-daily {
+						justify-content: flex-end;
+	 margin: auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#table-londaily {
+	display: inline-table;
+}
+
+#table-lon-notime {
+						justify-content: flex-end;
+	 margin: auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#tablelon-notime {
+	display: inline-table;
+}
+
+#table-lonnotime-daily {
+							justify-content: flex-end;
+	 margin: auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#table-lon-notime-daily {
+	display: inline-table;
+}
+
+#tabletime {
+	display:inline-table;
+}
+
+#table-timedaily {
+	display: inline-table;
+}
