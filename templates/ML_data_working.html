@@ -244,34 +244,389 @@
         <div class="row">
           <div class="col-12 text-center">
             <h2>Latest Work</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, et, placeat !</p>
+            <p>The current models were run with 50,000+ rows. The test dataset portion is 33% of the rows from the total dataset. The number of estimators was a max of 80. The code will use the number of estimators with the best score and use that model to predict the target.</p>
+			             <p>Latitude model with all the features had the best performance, with the model explaining ~90% of the variability from the predictor features.</p>
+			  <p>The next best model in terms of performance was depth without time as a predictor. This model was ~86% score.</p>
+			  <p>As expected, the model to predict time perform dismally, with essentially no variability explained by it.</p>
+			  			<hr>
           </div>
+
         </div>
-        <div class="row">
+        <div class="row" id="graphs-1">
           <div class="col-md-6 col-12 text-center">
-            <img class="img-fluid" src="../images/400x400.gif" alt="">
-            <h4>Lorem ipsum dolor sit amet, consectetur elit</h4>
-            <h6>Lorem ipsum dolor sit amet, consectetur elit</h6>
+			  <a href="../static/images/extratrees_depnotime_linear_sns.png" target="_blank">
+    <img class="img-fluid" src="../static/images/extratrees_depnotime_linear_sns.png" id="depnotime-linear" alt=""
+        style="width: 37rem;max-width: 100%;height: auto;vertical-align: 
+        middle;border-style: none;">
+</a>
+            <h4>Depth Prediction (No Unix Time)</h4>
+            <h6>Performance Info:</h6>
+			  <br>
+			  <div class="container" id="table-dep-notime">
+			  <table width="300" border="1" id="table-depnotime">
+  <tbody>
+    <tr>
+      <th scope="col"># Estimators</th>
+      <th scope="col">MAE</th>
+      <th scope="col">RMSE</th>
+      <th scope="col">R-squared</th>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>6.835</td>
+      <td>20.184</td>
+      <td>0.855</td>
+    </tr>
+  </tbody>
+</table>
+ </div>
+
           </div>
           <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
-            <img class="img-fluid" src="../images/400x400.gif" alt="">
-            <h4>Lorem ipsum dolor sit amet, consectetur elit</h4>
-            <h6>Lorem ipsum dolor sit amet, consectetur elit</h6>
+			  <a href="../static/images/extratrees_depnotime_linear_sns_daily.png" target="_blank">
+    <img class="img-fluid" src="../static/images/extratrees_depnotime_linear_sns_daily.png" id="depnotime-linear-daily" alt=""
+        style="width: 37rem;max-width: 100%;height: auto;vertical-align: 
+        middle;border-style: none;">
+</a>
+            <h4>Depth Prediction Daily Data from USGS (No Unix Time)</h4>
+            <h6>Performance Info:</h6>
+
+			  			  <div class="container" id="table-dep-notime-daily">
+							  			
+			  <table width="300" border="1" id="table-depnotime-daily">
+
+  <tbody>
+    <tr>
+
+      <th scope="col">RMSE</th>
+      <th scope="col">R-squared</th>
+    </tr>
+    <tr>
+
+      <td>15.774</td>
+      <td>0.889</td>
+    </tr>
+  </tbody>
+</table>
+ </div>
+		
           </div>
         </div>
-        <div class="row mt-2">
-          <div class="col-md-3 col-6"><img class="img-fluid float-right" src="../images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6"><img class="img-fluid float-left" src="../images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-right" src="../images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-left" src="../images/200x200.gif" alt=""></div>
+		  	  	  <hr>
+		         <div class="row" id="graphs-2">
+          <div class="col-md-6 col-12 text-center">
+            			  <a href="../static/images/extratrees_dep_linear_sns.png" target="_blank">
+    <img class="img-fluid" src="../static/images/extratrees_dep_linear_sns.png" id="depth-linear" alt=""
+        style="width: 37rem;max-width: 100%;height: auto;vertical-align: 
+        middle;border-style: none;">
+</a>
+            <h4>Depth Prediction</h4>
+            <h6>Performance Info:</h6>
+			  			  <div class="container" id="table-dep">
+			  <table width="300" border="1" id="tabledep">
+  <tbody>
+    <tr>
+      <th scope="col"># Estimators</th>
+      <th scope="col">MAE</th>
+      <th scope="col">RMSE</th>
+      <th scope="col">R-squared</th>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>7.100</td>
+      <td>20.422</td>
+      <td>0.852</td>
+    </tr>
+  </tbody>
+</table>
+ </div>
+          </div>
+
+          <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+         			  <a href="../static/images/extratrees_depth_linear_sns_daily.png" target="_blank">
+    <img class="img-fluid" src="../static/images/extratrees_depth_linear_sns_daily.png" id="depth-linear-daily" alt=""
+        style="width: 37rem;max-width: 100%;height: auto;vertical-align: 
+        middle;border-style: none;">
+</a>
+            <h4>Depth Prediction Daily Data from USGS</h4>
+            <h6>Performace info:</h6>
+			  			  			  <div class="container" id="table-dep-daily">
+							  			
+			  <table width="300" border="1" id="table-depdaily">
+
+  <tbody>
+    <tr>
+
+      <th scope="col">RMSE</th>
+      <th scope="col">R-squared</th>
+    </tr>
+    <tr>
+
+      <td>30.996</td>
+      <td>0.574</td>
+    </tr>
+  </tbody>
+</table>
+ </div>
+          </div>
         </div>
-        <hr>
-        <div class="row">
-          <div class="col-md-3 col-6"><img class="img-fluid float-right" src="../images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6"><img class="img-fluid float-left" src="../images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-right" src="../images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-left" src="../images/200x200.gif" alt=""></div>
+		  <hr>
+		  		         <div class="row">
+          <div class="col-md-6 col-12 text-center">
+			  <a href="../static/images/extratrees_extratrees_lat_linear_sns.png" target="_blank">
+				  <img class="img-fluid" src="../static/images/extratrees_lat_linear_sns.png" alt=""></a>
+            <h4>Latitude Prediction</h4>
+            <h6>Performance Info:</h6>
+			  			  			  <div class="container" id="table-lat">
+			  <table width="300" border="1" id="tablelat">
+  <tbody>
+    <tr>
+      <th scope="col"># Estimators</th>
+      <th scope="col">MAE</th>
+      <th scope="col">RMSE</th>
+      <th scope="col">R-squared</th>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>1.814</td>
+      <td>6.343</td>
+      <td>0.903</td>
+    </tr>
+  </tbody>
+</table>
+ </div>
+          </div>
+          <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+			  <a href="../static/images/extratrees_extratrees_lat_linear_sns_daily.png" target="_blank">
+            <img class="img-fluid" src="../static/images/extratrees_lat_linear_sns_daily.png" alt=""></a>
+            <h4>Latitude Prediction Daily Data from USGS</h4>
+            <h6>Performance Info:</h6>
+			  			  			  			  <div class="container" id="table-lat-daily">
+							  			
+			  <table width="300" border="1" id="table-latdaily">
+
+  <tbody>
+    <tr>
+
+      <th scope="col">RMSE</th>
+      <th scope="col">R-squared</th>
+    </tr>
+    <tr>
+
+      <td>12.543</td>
+      <td>0.583</td>
+    </tr>
+  </tbody>
+</table>
+ </div>
+          </div>
         </div>
+		  <hr>
+		  		         <div class="row">
+          <div class="col-md-6 col-12 text-center">
+			  <a href="../static/images/extratrees_extratrees_latnotime_linear_sns.png" target="_blank">
+            <img class="img-fluid" src="../static/images/extratrees_latnotime_linear_sns.png" alt=""></a>
+            <h4>Latitude Prediction (No Unix Time)</h4>
+            <h6>Prediction Info:</h6>
+			  			  			  <div class="container" id="table-lat-notime">
+			  <table width="300" border="1" id="tablelat-notime">
+  <tbody>
+    <tr>
+      <th scope="col"># Estimators</th>
+      <th scope="col">MAE</th>
+      <th scope="col">RMSE</th>
+      <th scope="col">R-squared</th>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>1.851</td>
+      <td>6.754</td>
+      <td>0.890</td>
+    </tr>
+  </tbody>
+</table>
+ </div>
+          </div>
+          <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+			  <a href="../static/images/extratrees_extratrees_latnotime_linear_sns_daily.png" target="_blank">
+            <img class="img-fluid" src="../static/images/extratrees_latnotime_linear_sns_daily.png" alt=""></a>
+            <h4>Latitude Prediction Daily Data from USGS (No Unix Time)</h4>
+            <h6>Prediction Info:</h6>
+			  			  			  			  <div class="container" id="table-latnotime-daily">
+							  			
+			  <table width="300" border="1" id="table-lat-notime-daily">
+
+  <tbody>
+    <tr>
+
+      <th scope="col">RMSE</th>
+      <th scope="col">R-squared</th>
+    </tr>
+    <tr>
+
+      <td>7.933</td>
+      <td>0.834</td>
+    </tr>
+  </tbody>
+</table>
+ </div>
+          </div>
+        </div>
+		  <hr>
+		  		         <div class="row">
+          <div class="col-md-6 col-12 text-center">
+		    <a href="../static/images/extratrees_extratrees_lon_linear_sns.png" target="_blank">
+				  <img class="img-fluid" src="../static/images/extratrees_lon_linear_sns.png" alt=""></a>
+            <h4>Longitude Prediction</h4>
+            <h6>Performance Info:</h6>
+		    <div class="container" id="table-lon">
+			  <table width="300" border="1" id="tablelon">
+  <tbody>
+    <tr>
+      <th scope="col"># Estimators</th>
+      <th scope="col">MAE</th>
+      <th scope="col">RMSE</th>
+      <th scope="col">R-squared</th>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>8.799</td>
+      <td>31.097&nbsp;</td>
+      <td>0.816</td>
+    </tr>
+  </tbody>
+</table>
+ </div>
+          </div>
+          <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+			  <a href="../static/images/extratrees_lon_linear_sns_daily.png" target="_blank">
+            <img class="img-fluid" src="../static/images/extratrees_lon_linear_sns_daily.png" alt=""></a>
+            <h4>Longitude Prediction Daily Data from USGS</h4>
+            <h6>Performance Info:</h6>
+			  			  			  			  <div class="container" id="table-lon-daily">
+							  			
+			  <table width="300" border="1" id="table-londaily">
+
+  <tbody>
+    <tr>
+
+      <th scope="col">RMSE</th>
+      <th scope="col">R-squared</th>
+    </tr>
+    <tr>
+
+      <td>39.319</td>
+      <td>0.765</td>
+    </tr>
+  </tbody>
+</table>
+ </div>
+          </div>
+        </div>
+		  <hr>
+		  		         <div class="row">
+          <div class="col-md-6 col-12 text-center">
+			  <a href="../static/images/extratrees_lonnotime_linear_sns.png" target="_blank">
+            <img class="img-fluid" src="../static/images/extratrees_lonnotime_linear_sns.png" alt=""></a>
+            <h4>Longitude Prediction (No Unix Time)</h4>
+            <h6>Performace Info:</h6>
+			  			  			  <div class="container" id="table-lon-notime">
+			  <table width="300" border="1" id="tablelon-notime">
+  <tbody>
+    <tr>
+      <th scope="col"># Estimators</th>
+      <th scope="col">MAE</th>
+      <th scope="col">RMSE</th>
+      <th scope="col">R-squared</th>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>8.728</td>
+      <td>33.021</td>
+      <td>0.795</td>
+    </tr>
+  </tbody>
+</table>
+ </div>
+          </div>
+          <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+			  <a href="../static/images/extratrees_lonnotime_linear_sns_daily.png" target="_blank">
+            <img class="img-fluid" src="../static/images/extratrees_lonnotime_linear_sns_daily.png" alt=""></a>
+            <h4>Longitude Prediction Daily Data from USGS (No Unix Time)</h4>
+            <h6>Performace Info:</h6>
+			  			  			  			  <div class="container" id="table-lonnotime-daily">
+							  			
+			  <table width="300" border="1" id="table-lon-notime-daily">
+
+  <tbody>
+    <tr>
+
+      <th scope="col">RMSE</th>
+      <th scope="col">R-squared</th>
+    </tr>
+    <tr>
+
+      <td>36.478</td>
+      <td>0.765</td>
+    </tr>
+  </tbody>
+</table>
+ </div>
+          </div>
+        </div>
+		  <hr>
+		  		         <div class="row">
+          <div class="col-md-6 col-12 text-center">
+			  <a href="../static/images/extratrees_time_linear_sns.png" target="_blank">
+				  <img class="img-fluid" src="../static/images/extratrees_time_linear_sns.png" alt=""></a>
+            <h4>Unix Time Prediction</h4>
+            <h6>Performance Info:</h6>
+			  			  			  <div class="container" id="table-time">
+			  <table width="300" border="1" id="tabletime">
+  <tbody>
+    <tr>
+      <th scope="col"># Estimators</th>
+      <th scope="col">MAE</th>
+      <th scope="col">RMSE</th>
+      <th scope="col">R-squared</th>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>&nbsp;3572006</td>
+      <td>4407181</td>
+      <td>0.028</td>
+    </tr>
+  </tbody>
+</table>
+ </div>
+          </div>
+          <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
+			  <a href="../static/images/extratrees_time_linear_sns_daily.png" target="_blank">
+            <img class="img-fluid" src="../static/images/extratrees_time_linear_sns_daily.png" alt=""></a>
+            <h4>Unix Time Prediction Daily Data USGS</h4>
+            <h6>Performance Info:</h6>
+			  			  			  			  <div class="container" id="table-time-daily">
+							  			
+			  <table width="300" border="1" id="table-timedaily">
+
+  <tbody>
+    <tr>
+
+      <th scope="col">RMSE</th>
+      <th scope="col">R-squared</th>
+    </tr>
+    <tr>
+
+      <td>10979580</td>
+      <td>-209818</td>
+    </tr>
+  </tbody>
+</table>
+ </div>
+          </div>
+        </div>
+
+
       </div>
     </section>
     <hr>
