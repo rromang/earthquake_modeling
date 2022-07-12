@@ -10872,17 +10872,12 @@ a.text-dark:hover, a.text-dark:focus {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 }
 
-#hist {
-	width: auto;
-	height: auto;
-}
 
-#histograms {
-	width: 900px;
-	height: 800px;
-}
+
+
+
+
 
 #igraph {
-	width:900px;
-	height: 800px;
+	text-align: center;
 }
