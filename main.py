@@ -41,37 +41,10 @@ def viz3():
     # """List all available api routes."""
     return render_template('ML_data.html')
 
-
-
-    """Return a list of all earthquake information"""
-        # Query all measurements
-    results = session.query(Earthquakes.time, Earthquakes.mag, Earthquakes.latitude, Earthquakes.longitude, \
-            Earthquakes.depth, Earthquakes.magType, Earthquakes.nst, Earthquakes.gap, Earthquakes.dmin, \
-                Earthquakes.rms, Earthquakes.net, Earthquakes.id, Earthquakes.updated).all()
-
-    session.close()
-
-        # Convert list of tuples into normal list
-    all_earthquakes = []
-    for time, mag, lat, lon, depth, magType, nst, gap, dmin, rms, net, id_equake, updated in results:
-        equake_dict = {}
-            
-        equake_dict['mag'] = mag
-        equake_dict['latitude'] = lat
-        equake_dict['longitude'] = lon
-        equake_dict['depth'] = depth
-        equake_dict['time'] = time
-        equake_dict['magType'] = magType
-        equake_dict['nst'] = nst
-        equake_dict['gap'] = gap
-        equake_dict['dmin'] = dmin
-        equake_dict['rms'] = rms
-        equake_dict['net'] = net
-        equake_dict['id'] = id_equake
-        equake_dict['updated'] = updated
-        all_earthquakes.append(equake_dict)
-        
-    return jsonify(all_earthquakes)
+@app.route("/histograms")
+def viz4():
+    # """List all available api routes."""
+    return render_template('histogram.html')
 
 
 if __name__ == '__main__':
