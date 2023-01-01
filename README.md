@@ -21,4 +21,13 @@
 
 ### Results from Extra Trees Regression Model
 
+![extratrees_lat_linear_sns](https://user-images.githubusercontent.com/80008461/210184747-2ed178e5-115a-422b-82c5-83b594bc03e2.png)
+Linear regression for the actual vs predicted values in model that was fed with magnitude, longitude, depth and, time as features to predict the latitude.
 
+![extratrees_lon_linear_sns](https://user-images.githubusercontent.com/80008461/210184816-da964234-7b2a-4469-bcc3-6f598ca38284.png)
+Linear regression for the the actual vs predicted values in model that was fed with magnitude, latitude, depth and, time as features to predict the longitude.
+
+![extratrees_mag_linear_sns](https://user-images.githubusercontent.com/80008461/210184835-06fd38fb-be1a-4f1b-a127-8bdd44d52b38.png)
+Linear regression for the actual vs predicted values in the model that was fed with longitude, latitude, depth and, time as features to predict the magnitude.
+
+The same process was done for predicting time using latitude, longitude, depth and magnitude. As expected, the model was not able to perform well with an R-squared of 0.029. For the other features the performed decently and was the regression of actual vs predicted values was relatively good. However, the magnitude error showed that the accuracy was not as good for these 2 features.
